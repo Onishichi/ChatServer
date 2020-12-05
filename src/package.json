@@ -7,10 +7,12 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "eslint": "^7.14.0",
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "test": "nodemon main.js"
+    "test": "nodemon main.js",
+    "lint": "eslint src"
   },
   "author": "",
   "license": "ISC"
