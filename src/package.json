@@ -4,10 +4,14 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "http-status-codes": "^2.1.4",
+    "prettier": "^2.2.1"
   },
   "devDependencies": {
     "eslint": "^7.14.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
     "nodemon": "^2.0.6"
   },
   "scripts": {
