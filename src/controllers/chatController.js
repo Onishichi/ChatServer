@@ -1,7 +1,5 @@
 "use strict";
 
-const { json } = require( "express" );
-
 module.exports = ( io ) =>
 {
     //新しい接続を監視する
@@ -26,8 +24,7 @@ module.exports = ( io ) =>
         {
             try
             {
-                const date = new Date();
-                io.emit( "message", { ...data, date: date.toString() });
+                io.emit( "message", { ...data, date: Date.now() });
                 console.log( "message", data );
             }
             catch ( e )
